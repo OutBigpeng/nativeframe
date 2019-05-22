@@ -27,8 +27,7 @@ class Routers extends Component {
                 BackHandler.exitApp();
                 return false;
             }
-            this.lastBackPressed = Date.now();
-            //轻提示模拟器不好用，试试真机 不行就换插件
+            this.lastBackPressed = Date.now(); 
             Toast.showLongBottom('再按一次退出应用');
             return true
         }
