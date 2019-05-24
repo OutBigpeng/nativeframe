@@ -24,13 +24,13 @@ export default class BasicLayout extends Component {
         return (
             <Container>
                 <Header  >
-                    <Left style={{ flex:0 }} >
+                    <Left style={{ flex:1 }} >
                         <LeftBack />
                     </Left>
-                    <Body style={{ alignSelf: 'center', alignItems: 'center',flex:1}}>
+                    <Body style={{ alignSelf: 'center', alignItems: 'center',flex:2}}>
                         <Title>{this.props.title}</Title>
                     </Body>
-                    <Right style={{flex:0 }} /> 
+                    <Right style={{flex:1 }} /> 
                 </Header>
                 <Content padder>
                     {this.props.children}
